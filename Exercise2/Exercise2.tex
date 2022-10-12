@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,mathabx,mathtools,xcolor,listings,lmodern,amsthm}   
+\usepackage{url}                
+\usepackage{proof}
+
+\begin{document}
+    \section*{Exercise2.1}
+    \begin{proof}
+        $ $\\
+        (i) (epic $\Rightarrow$ surjective)
+
+        For epic arrow $f:A\rightarrow B$ we use the proof by contradiction.
+        
+        Assuming that $f$ is not surjective, then there exists $b\in B$ such that for all $a\in A$, $f(a)\ne b$. 
+        
+        Let $i,j : B\rightarrow D$ such that $i(x)=j(x)$ for all $x\ne b\in B$ and $i(b)\ne j(b)$. Then for all $a\in A$, $if(a) = jf(a)$ but $i\ne j$. Therefore, $f$ is not epic which is a contradiction.
+
+        Therefore $f$ is epic implies $f$ is surjective.\\
+        (ii) (surjective $\Rightarrow$ epic)
+
+        For surjective mapping $f:A\rightarrow B$. If $if = jf$, then $\forall b\in B.\; \exists a\in A.\; i(b)=if(a)=jf(a)=j(b)$. Therefore $f$ is also epic.
+    \end{proof}
+
+    
+\end{document}
